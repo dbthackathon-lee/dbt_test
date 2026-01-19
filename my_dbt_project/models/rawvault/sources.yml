@@ -1,0 +1,22 @@
+version: 2
+
+sources:
+  - name: ai_staging
+    database: dbthackathon
+    schema: dbthackathon_dataset
+    tables:
+      - name: AI_AIRPORT_DETAILS
+      - name: AI_FLIGHT_DETAILS
+      - name: AI_BOOKING_DETAILS
+      - name: AI_PASSENGER_DETAILS
+      - name: AI_PAYMENT
+
+  - name: sj_staging
+    database: dbthackathon
+    schema: dbthackathon_dataset
+    tables:
+      - name: SJ_AIRPORT_DETAILS
+      - name: SJ_FLIGHT_DETAILS
+      - name: SJ_BOOKING_DETAILS
+      - name: SJ_PASSENGER_DETAILS
+      - name: SJ_PAYMENT

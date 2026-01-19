@@ -1,0 +1,11 @@
+my_dbt_project:
+  target: dev
+  outputs:
+    dev:
+      type: bigquery
+      method: service-account
+      keyfile: /content/dbthackathon-2ba920af0cdf.json   # path to your GCP key file
+      project: dbthackathon
+      dataset: dbthackathon_dataset
+      threads: 4
+      timeout_seconds: 300
